@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: my-workflow 
 on: [push]
 jobs:
   say-hello-world:
