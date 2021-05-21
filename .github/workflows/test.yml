@@ -1,0 +1,10 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  say-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: npm install -g hello-world-npm 
+      - run: hello-world-npm
